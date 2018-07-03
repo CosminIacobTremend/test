@@ -21,9 +21,6 @@ import org.springframework.stereotype.Service;
 public class ThrottlingService {
 
   @Autowired
-  private UserRepository userRepository;
-
-  @Autowired
   private ApiUsageRepository apiUsageRepository;
 
   @Value("${api.usage.limit}")
